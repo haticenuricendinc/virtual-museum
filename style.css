@@ -1,0 +1,115 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f2f5;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #2c3e50;
+    color: #ecf0f1;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+header p {
+    font-size: 1.1em;
+    margin-top: 10px;
+}
+
+#artifact-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+    padding: 30px 20px;
+    max-width: 1200px;
+    margin: 20px auto;
+}
+
+.artifact-card {
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.08);
+    padding: 25px;
+    width: 320px; /* Slightly wider cards */
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.artifact-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+
+.artifact-card img {
+    max-width: 100%;
+    height: 250px; /* Fixed height for images */
+    object-fit: contain; /* Ensures the image fits without cropping */
+    border-radius: 8px;
+    margin-bottom: 20px;
+    background-color: #f9f9f9; /* Light background for images */
+    padding: 5px;
+}
+
+.artifact-card h2 {
+    font-size: 1.6em;
+    color: #2980b9;
+    margin-top: 0;
+    margin-bottom: 12px;
+}
+
+.artifact-card p {
+    font-size: 0.95em;
+    line-height: 1.5;
+    text-align: left;
+    width: 100%;
+    margin-bottom: 8px;
+}
+
+.artifact-card strong {
+    color: #555;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    background-color: #2c3e50;
+    color: #ecf0f1;
+    font-size: 0.9em;
+    box-shadow: 0 -2px 4px rgba(0,0,0,0.1);
+}
+
+.loading-message {
+    text-align: center;
+    width: 100%;
+    font-size: 1.2em;
+    color: #777;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    #artifact-container {
+        padding: 20px 15px;
+    }
+    .artifact-card {
+        width: 100%; /* Full width on smaller screens */
+        max-width: 350px; /* Limit max width even at 100% */
+    }
+    header h1 {
+        font-size: 2em;
+    }
+}
